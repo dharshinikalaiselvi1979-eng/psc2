@@ -1,0 +1,102 @@
+You have one app to build. You have two tools. You have to build it both ways and be honest about what each one cost you.
+
+The app is simple by design. A personal task manager: add a task, mark it complete, filter by status. Simple enough to build in both tools in one session. Complex enough that the differences in how each tool approaches structure, code quality, and editability will be clearly visible when you compare them.
+
+The Two Approaches
+Vibe coding tools — Lovable, v0, or Google AI Studio Build. You describe the app in natural language. The tool generates the full application in one shot. You export the code.
+
+AI pair programming assistants — GitHub Copilot or Cursor. You build the app file by file. The AI suggests code inline as you type. You accept, modify, or reject every suggestion. You drive.
+
+Repository Access
+Access the starter repository below:
+
+Click on the link to access the repository.
+
+Clone the repository to your local machine:
+
+The repo contains two empty folders — /vibe-version and /pair-version — and an app-spec.md file describing exactly what features to build in both versions. Read app-spec.md before writing your first prompt.
+
+Your Task
+Build the same task manager app using both approaches. Deploy both versions live. Compare them across five dimensions. Document everything in the repo README. Record a short video showing both builds running.
+
+The App You Are Building
+Build this exact feature set both times — no additions, no removals:
+
+Add a task with a title
+Mark a task as complete
+Filter tasks by status: All / Active / Completed
+Clean, usable UI — does not need to be complex
+Same feature set. Same result. Different tools.
+
+What You Are Required To Do
+Build the task manager using a vibe coding tool — Lovable, v0, or Google AI Studio Build.
+Export the generated code and place it in a /vibe-version folder in your repository.
+Build the same task manager using an AI pair programming assistant — GitHub Copilot or Cursor.
+Place that code in a /pair-version folder in your repository.
+Deploy both versions live — GitHub Pages, Netlify, or Vercel. Add both live URLs to the README.
+Write the comparison table in the README covering all five dimensions.
+Record a 2–3 minute video showing both apps running live and explaining your observations.
+Push everything to a public GitHub repository and open a Pull Request.
+Implementation Guidelines
+Both apps must run without errors — a broken app scores 0 for that folder regardless of other submission quality.
+
+Deploy both versions before submitting. The live URLs must be in the README. A missing deployment link is treated as undeployed.
+
+Use the vibe tool to generate the full app in one prompt — do not manually edit the generated code after exporting. The point is to see what the tool produces.
+
+Use the pair tool the way it is meant to be used — you write the code, the AI assists inline. Do not paste a full prompt and let it generate everything.
+
+The comparison table observations must be specific and evidence-based. Times, line counts, file counts, specific tool behaviours observed. Not impressions.
+
+Submission Workflow
+Step 1: Build the Vibe Version
+Open Lovable, v0, or Google AI Studio Build. Write one clear prompt describing the task manager app. Let the tool generate the full application. Export or copy the generated code into /vibe-version in your repository.
+
+Note the time it took from prompt to running app. Count the files generated. Look at the folder structure and component names. You will need these observations for the comparison table.
+
+Step 2: Build the Pair Version
+Open your code editor with GitHub Copilot or Cursor active. Build the same task manager from scratch using the AI inline. Write your own component structure. Accept or reject inline suggestions as you go.
+
+Note the time it took. Count how many suggestions you accepted vs rejected. Note any moments where you had to override the AI's suggestion with your own decision.
+
+Step 3: Deploy Both Versions
+Deploy both apps to a live URL.
+
+For GitHub Pages: push the build output to a gh-pages branch or use the repo settings to enable Pages from the /docs folder.
+
+For Netlify or Vercel: drag and drop the build folder at netlify.com or connect your repo at vercel.com. Both are free for this use case and take under 5 minutes.
+
+Add both live URLs to your README:
+
+## Live Deployments
+- Vibe version: https://[your-link-here]
+- Pair version: https://[your-link-here]
+Step 4: Write the Comparison Table
+Add this table to your README and fill every cell with specific, evidence-based observations:
+
+## Comparison Table
+
+| Dimension     | Vibe Version (tool used) | Pair Version (tool used) | Verdict |
+|---------------|--------------------------|--------------------------|---------|
+| Speed         |                          |                          |         |
+| Control       |                          |                          |         |
+| Code Quality  |                          |                          |         |
+| Explainability|                          |                          |         |
+| Editability   |                          |                          |         |
+What specific observations look like:
+
+Dimension	Weak (scores 0)	Strong (scores full marks)
+Speed	Vibe was faster	Lovable generated full layout in 9 min. Cursor took 34 min with 18 manual file edits.
+Control	Pair gave more control	Lovable ignored my request to not use modals. Cursor let me choose every function signature.
+Code Quality	Pair code was cleaner	Vibe output had 3 components over 200 lines. Pair version — longest component was 67 lines.
+Explainability	Pair was easier to explain	Could explain every function in pair version. Vibe generated a useTaskReducer hook I had to read 3 times to understand.
+Editability	Pair was easier to edit	Adding due dates took 8 min in pair version. Took 25 min in vibe version because filter logic was spread across 4 files.
+Step 5: Add Scenario Recommendation to README
+After the comparison table, add a section explaining which tool you would use for which scenario — backed by what you observed in your build:
+
+## When I Would Use Each Tool
+
+**Vibe coding tool for:** [scenario] — because [specific observation from your build]
+
+**AI pair programming for:** [scenario] — because [specific observation from your build]
+this is my project
