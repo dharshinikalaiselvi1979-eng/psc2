@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pair Version Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="task-panel">
+      <h1>Task Manager</h1>
+      <form id="taskForm" class="task-form">
+        <input id="taskTitle" type="text" placeholder="Enter task title" aria-label="Task title" />
+        <button type="submit">Add Task</button>
+      </form>
+      <div class="task-filters" role="group" aria-label="Task filters">
+        <button type="button" class="filter-button active" data-filter="all">All</button>
+        <button type="button" class="filter-button" data-filter="active">Active</button>
+        <button type="button" class="filter-button" data-filter="completed">Completed</button>
+      </div>
+      <ul id="tasks" class="task-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
